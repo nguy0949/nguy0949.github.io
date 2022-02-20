@@ -21,9 +21,11 @@ body {
 }
 
 .banner_text {
+    margin: 0;
     position: absolute;
     top: 60%;
     left: 35%;
+    font-weight: 500;
 }
 
 nav ul {
