@@ -6,11 +6,7 @@ html {
     justify-content: center;
 }
 
-body {
-    background-color: #d4eae9;
-    width: 1000px;
-    margin: 0;
-}
+ /* ------------------------------------ Header part ------------------------------------------- */
 
 .banner {
     background: url('./pictures/lone-starfish-wide.jpg') no-repeat;
@@ -47,6 +43,13 @@ nav li {
 
 nav li:last-child {
     border-right: none;
+}
+
+/* ------------------------------------ Body part ------------------------------------------- */
+body {
+    background-color: #d4eae9;
+    width: 1000px;
+    margin: 0;
 }
 
 main {
@@ -105,6 +108,8 @@ form input[type=text], form input[type=email] {
     padding: 10px;
     text-transform: uppercase;
 }
+
+ /* ------------------------------------ Footer part ------------------------------------------- */
 .move {
     text-align: right;
     margin-right: 40px;
