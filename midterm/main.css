@@ -1,0 +1,110 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #aad4ce;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #d4eae9;
+    width: 1000px;
+    margin: 0;
+}
+
+.banner {
+    background: url('./pictures/lone-starfish-wide.jpg') no-repeat;
+    color: #fff;
+    height: 340px;
+    position: relative;
+    font-size: 3.2rem;
+}
+
+.banner_text {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 2px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    display: inline;
+    width: 33.33%;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 1px solid black;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main img {
+    width: 280px;
+    height: 280px;
+    float: left;
+    margin: 0 10px 20px 0;
+}
+
+main p {
+    word-spacing: 2px;
+    line-height: 1.4rem;
+}
+
+main ul li {
+    line-height: 1.2rem;
+}
+
+main form {
+    border: 1px solid black;
+    padding: 25px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.label_wrapper {
+    margin-bottom: 6px;
+}
+
+form input[type=text], form input[type=email] {
+    width: 99%;
+    margin-bottom: 15px;
+}
+
+.message {
+    height: 88px;
+}
+
+.question_wrapper {
+    margin-bottom: 20px;
+}
+
+.question_wrapper p {
+    margin: 0;
+}
+
+.button_wrapper {
+    margin: 6px 0;
+}
+
+.button_wrapper > button {
+    padding: 10px;
+    text-transform: uppercase;
+}
+.move {
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
