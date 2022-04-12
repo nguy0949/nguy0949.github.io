@@ -1,3 +1,9 @@
+html {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    /* use Open sans as default, if "open sans" is not available, we use sans serif, arial, helvetica */
+}
+
+/* ----------------------------- for mobile screens --------------------------- */
 header {
     background-color: black;
     color: #c68c2b;
@@ -24,6 +30,7 @@ nav {
 .navigation-list > li:first-child {
     background-color: #c68c2b;
     text-align: start;
+    padding: 0;
 }
 .navigation-list > :nth-child(2) {
     background-color: #c68c2b;
@@ -41,10 +48,10 @@ nav {
     border:1px solid #c68c2b;
     padding: 5px;
 }
-.section-one {
+.section-welcome {
     width: 100%;
     height: 450px;
-    background: url("./images/main-banner.jpg") no-repeat center;
+    background: url("../images/main-banner.jpg") no-repeat center;
     background-size: 100% 450px;
     display: flex;
     align-items: center;
@@ -58,7 +65,7 @@ nav {
 
 .welcome-text {
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 70px;
     margin: 40px 0 15px;
 }
@@ -68,16 +75,16 @@ nav {
 .rectangle {
     background-color: #c68c2b; 
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px;
     border: none;
 
 }
-.section-two {
+.section-about {
     width: 100%;
     background-color: #ffe6ac;
 }
 
-.section-two .container {
+.section-about .container {
     padding: 10px;
 }
 
@@ -88,7 +95,7 @@ nav {
 .digital {
     width: 100%;
 }
-.section-three .container {
+.section-digital .container {
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +105,7 @@ nav {
     padding: 10px;
 }
 
-.section-four {
+.section-marketing {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -107,7 +114,7 @@ nav {
 .marketing-image {
     width: 100%;
 }
-.section-five {
+.section-video {
     margin-top: 10px;
     display: flex;
     flex-direction: column;  
@@ -119,7 +126,7 @@ nav {
     background-color: #ffe6ac;
     padding: 10px;
 }
-.section-six {
+.section-web {
     margin-top: 10px;
     display: flex;
     flex-direction: column; }
@@ -129,7 +136,7 @@ nav {
             background-color: #ffe6ac;
             padding: 10px; }
 
-            .section-seven {
+            .section-print {
                 margin-top: 10px;
                 display: flex;
                 flex-direction: column; }
@@ -138,20 +145,23 @@ nav {
             .print-text {
                         background-color: #ffe6ac;
                         padding: 10px; }
-.section-eight {
-    background: url("./images/vision.jpg") no-repeat center;
+.section-vision {
+    background: url("../images/vision.jpg") no-repeat center;
     background-size: 100% 250px;
     width: 100%;
     height: 250px;
     margin-top: 20px;
     color:#fff;
 }
-.section-nine {
+.vision-content {
+    padding: 10px;
+}
+.section-john {
     margin-top: 10px;
     display: flex;
     flex-direction: column; 
 }
-.section-nine h3 {
+.section-john h3 {
     margin: 0;
     border-bottom: 2px solid #c68c2b;
 }
@@ -164,12 +174,12 @@ nav {
             margin:  0;
 }
 
-.section-nine, .section-ten {
+.section-john, .section-bob {
     margin-top: 10px;
     display: flex;
     flex-direction: column; 
 }
-.section-ten h3 {
+.section-bob h3 {
     margin: 0;
     border-bottom: 2px solid #c68c2b;
 }
@@ -203,20 +213,24 @@ nav {
     width: fit-content;
     margin-top: 10px;
 }
+th, td {
+    border: 1px solid;
+    padding: 0;
+}
 .hour-table {
-    display: grid;
-    grid-template-columns: 6fr 4fr;
+    width: 100%;
+    border-spacing: 0;
 }
 
-.hour-table div {
+.hour-table tr {
     padding: 0 10px;
     border: 1px solid #000;
     height: 40px;
-    display: flex;
-    align-items: center;
+   
 }
 
-.hour-table div:first-child, .hour-table div:nth-child(2) {
+.hour-table th {
+    width: 50%;
     background-color: #ffe6ac;
     justify-content: center;
 }
@@ -246,49 +260,35 @@ padding-top: 20px;
 .unplash{
     color: #c68c2b;
 }
-.button-digital {
-    background-color: #c68c2b; 
+.button-digital, .mkt-button, .video-button, .web-button, .print-button  {
+    background-color: black;
+    color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 25px 40px;
     border: none;
+    font-size: 15px;
 }
-.mkt-button {
-    background-color: #c68c2b; 
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-}
-.video-button {
-    background-color: #c68c2b; 
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-}
-.web-button {
-    background-color: #c68c2b; 
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-}
-.print-button {
-        background-color: #c68c2b; 
-        text-align: center;
-        padding: 10px 20px;
-        border: none;
-    }
+
 .vision-button {
         background: rgba(0,0,0,.5);
+        /* this color I researched and taken from w3school */
         text-align: center;
-        padding: 10px 20px;
+        padding: 20px;
         border: none;
         color:#fff;
         border: 1px solid #c68c2b;
 }
-.section-eight{
-    padding: 10px;
-}
 
-@media screen and (min-width: 800px) {
+/* ------------------------------ for desktop screens ------------------------------------- */
+@media screen and (min-width: 760px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .main-container {
+        max-width: 1200px;
+        
+    }
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -322,9 +322,10 @@ padding-top: 20px;
         margin: 0 50px;
     }
 
-    .section-two .container {
+    .section-about .container {
         display: flex;
         flex-direction: row;
+        margin: 0 40px;
     }
 
     .about-us {
@@ -332,45 +333,60 @@ padding-top: 20px;
         height: auto;
     }
 
+    .about-us-text {
+        margin-left: 10px;
+    }
+    .ourservices-text {
+        padding: 0 50px;
+    }
     .services-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;        
         grid-template-areas: 
             "first first first second second second"
             "third third four four fifth fifth";
         gap: 0 5px;
+        padding: 0 50px;
     }
-    .section-three {
+    .section-digital {
         grid-area: first;
     }
 
-    .section-four {
+    .section-marketing {
         grid-area: second;
         margin-top: 0;
     }
 
-    .section-three img, .section-four img {
+    .section-digital img, .section-marketing img {
         height: 350px;
     }
 
-    .section-five {
+    .section-video {
         grid-area: third;
     }
 
-    .section-six {
+    .section-web {
         grid-area: four;
     }
-    .section-seven {
+    .section-print {
         grid-area: fifth;
     }
 
-    .section-five img, .section-six img, .section-seven img {
+    .section-video img, .section-web img, .section-print img {
         height: 230px;
     }
+    .section-vision {
+        display: flex;
+        align-items: center;
+    }
+    .vision-content {
+        margin: 0 50px;
+    }
 
-    .section-nine {
+    .section-john {
         display: flex;
         flex-direction: row;
+        padding: 0 50px;
     }
     .john-image {
         width: 50%;
@@ -378,11 +394,14 @@ padding-top: 20px;
     .john-text {
         width: 50%;
     }
-    
-    .section-ten {
+    .ourteam-text {
+        padding: 0 50px;
+    }
+    .section-bob {
         display: flex;
         flex-direction: row-reverse;
         margin: 0;
+        padding: 0 50px;
     }
     .bob-image {
         width: 50%;
@@ -393,19 +412,29 @@ padding-top: 20px;
     .sendus-text {
         display: flex;
         flex-direction: row;
+        margin-top: 0;
     }
     .location-text {
         display: flex;
         flex-direction: row; 
-    }
+        margin-top: 0;
+}
     .contact-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        
     }
-    .contact-message-container {
+    .contact-section {
+        padding: 0 50px;
+    }
+    .message-wrapper {
         order: 1;
         width: 50%;
+    }
+    .contact-message-container {
+       padding-right: 10px;
+       padding-top: 0;
     }
     .operation-container {
         order: 3;
@@ -414,5 +443,13 @@ padding-top: 20px;
     .location-container {
         order: 2;
         width: 50%;
+    }
+    .button-digital, .mkt-button, .video-button, .web-button, .print-button {
+        background-color: black;
+        text-align: center;
+        border: none;
+        width: 100%;
+        height: 50px;
+        color: white;
     }
 }
